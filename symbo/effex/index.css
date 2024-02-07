@@ -152,7 +152,17 @@ span{
 }
 
 .regbtn{
-    font-size: 6vmin;
+    font-size: 5.5vmin;
+    border: none;
+    background-color: transparent; 
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    margin: 2rem 0;
+    transition: all .5s ease-out;
+}
+
+.regbtns{
+    font-size: 7.5vmin;
     border: none;
     background-color: transparent; 
     font-family: 'Inconsolata', monospace;
@@ -167,6 +177,10 @@ span{
     width: 100vmin;
 }
 .regbtn a{
+    text-decoration: none;
+    color: lime;
+}
+.regbtns a{
     text-decoration: none;
     color: lime;
 }
@@ -198,12 +212,15 @@ span{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5rem;
 }
 .nontec{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5rem;
+
 }
 .evebtn{
     font-family: 'Inconsolata',monospace;
@@ -212,7 +229,7 @@ span{
     background-color: transparent;
     color: white;
     font-size: 5.5vmin;
-    margin: 2rem;
+    margin: 1rem 3rem;
     border: 1px solid lime;
     cursor: pointer;
     transition: all .3s ease-in;
