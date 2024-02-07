@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins&display=swap');
+@font-face {
+    font-family: Matrix;
+    src: url(Matrix-MZ4P.ttf);
+    
+}
 @font-face {
     font-family: Mokoto;
-    src: url(Matrix-MZ4P.ttf);
+    src: url(Mokoto\ Demo.ttf);
 }
+html{scroll-behavior: smooth;}
 body{
     background-color: black;
     text-align: center;
     display: grid;
     place-items: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
 h1{
     color: lime;
     font-size: 5rem;
-    font-family: 'Mokoto',monospace;
+    font-family: 'Matrix',monospace;
     padding: 0 2rem;
     border-radius: 1rem;
     transition: all .3s ease-out;
@@ -24,6 +29,26 @@ h1{
     letter-spacing: 7px;
 }
 
+h2{
+    color: lime;
+    font-size: 12vmin;
+    font-family: 'Mokoto',monospace;
+    padding: 0 2rem;
+    letter-spacing: 3px;
+}
+p{
+    color: #fff;
+    font-size: 4.2vmin;
+    width: 90%;
+    font-family: 'Poppins',sans-serif;
+    margin: 30px auto;
+    text-align: center;
+}
+span{
+    color: #00ff00;
+    text-shadow: 0px 0px 30px lime;
+    font-weight: bold;
+}
 @keyframes fadein{
     from{opacity: 0; transform: translateY(-20px);}
     to{opacity: 1; transform: translateY(0px);}
@@ -48,15 +73,13 @@ h1{
     z-index: -1;
 }
 .container{
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.logo{
-    width: 200px;
+    margin: 10rem 0;
 }
 
 .arch{
@@ -77,12 +100,14 @@ h1{
 
 .yrs{
     width: 300px;
-    margin-top: -90px;
+    margin-top: -110px;
+    margin-left: 170px;
     box-shadow: 10px 10px 5;
     animation: faderight ease-in 1.3s, blink linear 5s infinite;
 }
 
 @keyframes blink{
+    71%{opacity: 1;}
     73% {opacity: 0;}
     75% {opacity: 1;}
     77% {opacity: 0;}
@@ -91,6 +116,14 @@ h1{
 @keyframes faderight{
     from{opacity: 0; transform: translateX(-30px);}
     to{opacity: 1; transform: translateX(0px);}
+}
+
+.glob{
+    width: 400px;
+    margin-top: -400px;
+    margin-right: -300px;
+    z-index: -1;
+    opacity: .3;
 }
 
 @media screen and (max-width:480px) {
@@ -103,12 +136,89 @@ h1{
     }
     .yrs{
         width: 45vmin;
-        margin-top: -15vmin;
-    }
-    .logo{
-        width: 35vmin;
+        margin-top: -20vmin;
+        margin-right: 30vmin;
+
     }
     .container{
         height: auto;
+        margin: 5rem 0;
     }
+    .glob{
+        width: 50vmin;
+        margin-top:-55vmin;
+        margin-right: -40vmin;
+    }
+}
+
+.regbtn{
+    font-size: 6vmin;
+    border: none;
+    background-color: transparent; 
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    margin: 2rem 0;
+    transition: all .5s ease-out;
+}
+.allbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vmin;
+}
+.regbtn a{
+    text-decoration: none;
+    color: lime;
+}
+
+.regbtn:hover a{
+    color: white;
+    text-shadow: 0px 0px 50px 2px white;
+}
+.post{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eve{
+    width: 100%;
+    height: auto;
+}
+.eve p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+.tec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.nontec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.evebtn{
+    font-family: 'Inconsolata',monospace;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 5.5vmin;
+    margin: 2rem;
+    border: 1px solid lime;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.evebtn:hover{
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 15px 1px #fff;
 }
