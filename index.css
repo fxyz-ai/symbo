@@ -8,13 +8,23 @@
     font-family: Mokoto;
     src: url(Mokoto\ Demo.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{scroll-behavior: smooth;}
 body{
     background-color: black;
     text-align: center;
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0;
+    box-sizing: border-box;
 }
 h1{
     color: lime;
@@ -45,7 +55,7 @@ h3{
 }
 p{
     color: #fff;
-    font-size: 4.2vmin;
+    font-size: 3.7vmin;
     width: 90%;
     font-family: 'Poppins',sans-serif;
     margin: 30px auto;
@@ -134,9 +144,6 @@ span{
 }
 
 @media screen and (max-width:480px) {
-    body{
-
-    }
     h1{
         font-size: 8vmin;
     }
@@ -159,16 +166,36 @@ span{
         margin-top:-55vmin;
         margin-right: -40vmin;
     }
+    /* .poster{
+        width: 20rem;
+    } */
+    .timer p{
+        margin: 0 1vmin;
+        font-size: 2.5vmin;
+    }
+
+    .tec{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .notec{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 .regbtn{
     font-size: 5.5vmin;
-    border: none;
+    border: 1px solid lime;
+    border-radius: 10px;
+    padding: 1rem;
     background-color: transparent; 
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
-    margin: 2rem 0;
+    margin: 1.5rem .5rem;
+    width: 30%;
     transition: all .5s ease-out;
+    cursor: pointer;
 }
 
 .regbtns{
@@ -194,27 +221,24 @@ span{
     text-decoration: none;
     color: lime;
 }
+.regbtn:hover{
+    background-color: #00ff00;
+    box-shadow: 0px 0px 30px 1px white;
 
+}
 .regbtn:hover a{
-    color: white;
+    color: #000;
     text-shadow: 0px 0px 50px 2px white;
+
 }
 .regbtns:hover a{
     color: white;
     text-shadow: 0px 0px 50px 2px white;
-}
-.post{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
+}   
 
 .eve{
     width: 100%;
-    height: auto;
+    height: fit-content;
 }
 .eve p{
     font-family: 'Courier New', Courier, monospace;
@@ -223,18 +247,18 @@ span{
 }
 .tec{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 5rem;
-}
-.nontec{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
     margin-bottom: 5rem;
 
+}
+.notec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
 }
 .evebtn{
     font-family: 'Inconsolata',monospace;
@@ -254,7 +278,7 @@ span{
     box-shadow: 0 0 15px 1px #fff;
 }
 .poster{
-    width: 150vmin;
+    width: 90%;
     cursor: pointer;
     border: 2px solid lime;
     padding: 10px;
@@ -262,16 +286,17 @@ span{
 
 .timer{
     border: 1px solid #00ff00;
-    margin-bottom: 5rem;
-    padding: 1.5rem .5rem;
+    margin:1.5rem 0 6rem 0;
+    padding: .5rem 1rem;
     display: flex;
     justify-content: space-between;
     width: 90%;
     text-align: center;
 }
 .timer p{
-    margin: 0 0.9rem;
+    margin: 0 1vmin;
+    font-size: 5vmin;
 }
 .colon{
-    font-size: 2rem;
+    font-size: 8vmin;
 }
