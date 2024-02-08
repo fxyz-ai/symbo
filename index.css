@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&family=Lato&family=Protest+Guerrilla&family=Poppins&display=swap');
 @font-face {
     font-family: Matrix;
     src: url(Matrix-MZ4P.ttf);
@@ -40,7 +40,7 @@ h1{
 
 h2{
     color: lime;
-    font-size: 12vmin;
+    font-size: 8vmin;
     font-family: 'Mokoto',monospace;
     padding: 0 2rem;
     letter-spacing: 3px;
@@ -58,7 +58,7 @@ p{
     font-size: 3.7vmin;
     width: 90%;
     font-family: 'Poppins',sans-serif;
-    margin: 30px auto;
+    margin: 2rem auto;
     text-align: center;
 }
 span{
@@ -187,25 +187,35 @@ span{
 .regbtn{
     font-size: 5.5vmin;
     border: 1px solid lime;
-    border-radius: 10px;
+    border-radius: 15px;
+    color: #00ff00;
     padding: 1rem;
     background-color: transparent; 
-    font-family: 'Inconsolata', monospace;
-    font-weight: bold;
+    font-family: 'Protest Guerrilla', monospace;
     margin: 1.5rem .5rem;
     width: 60vmin;
     transition: all .5s ease-out;
+    letter-spacing: 2px;
+    text-decoration: none;
     cursor: pointer;
 }
 
 .regbtns{
-    font-size: 7.5vmin;
+    font-size: 5.5vmin;
     border: none;
     background-color: transparent; 
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
     margin: 2rem 0;
     transition: all .5s ease-out;
+    color: #00ff00;
+}
+.regbtns a{
+    border: none;
+    text-decoration: none;
+    margin: 2rem 0;
+    transition: all .4s ease-out;
+    color: #00ff00;
 }
 .allbtn{
     display: flex;
@@ -213,24 +223,13 @@ span{
     justify-content: space-around;
     width: 100vmin;
 }
-.regbtn a{
-    text-decoration: none;
-    color: lime;
-}
-.regbtns a{
-    text-decoration: none;
-    color: lime;
-}
 .regbtn:hover{
     background-color: #00ff00;
+    color: #000;
     box-shadow: 0px 0px 30px 1px white;
 
 }
-.regbtn:hover a{
-    color: #000;
-    text-shadow: 0px 0px 50px 2px white;
 
-}
 .regbtns:hover a{
     color: white;
     text-shadow: 0px 0px 50px 2px white;
@@ -241,8 +240,8 @@ span{
     height: fit-content;
 }
 .eve p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 4vmin;
+    font-family: 'Lato',sans-serif;
+    font-size: 3.5vmin;
     font-weight: bold;
 }
 .tec{
@@ -285,7 +284,6 @@ span{
 }
 
 .timer{
-    border: 1px solid #00ff00;
     margin:1.5rem 0 6rem 0;
     padding: .5rem 1rem;
     display: flex;
