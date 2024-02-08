@@ -16,3 +16,11 @@ body{
     background-blend-mode: overlay;
     background-color: rgba(0,0,0,0.6);
 }
+
+.post{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
