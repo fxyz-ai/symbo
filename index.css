@@ -279,7 +279,7 @@ span{
 .poster{
     width: 90%;
     cursor: pointer;
-    border: 2px solid lime;
+    /* border: 2px solid lime; */
     padding: 10px;
 }
 
