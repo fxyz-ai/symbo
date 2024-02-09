@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Rowdies&display=swap');
+      </style>
+    <style>
+        .cont{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+        @keyframes blink{
+            71%{opacity: 1;}
+            73% {opacity: 0;}
+            75% {opacity: 1;}
+            77% {opacity: 0;}
+            80%{opacity: 1;}
+        }
+        .regbtn{
+            font-size: 8vmin;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            color: #fff;
+            padding: 1rem;
+            -webkit-text-stroke: .5px #9802a8ff;
+            background-color: transparent; 
+            font-family: 'Kalam', monospace;
+            margin: 1.5rem .5rem;
+            width: 60vmin;
+            font-weight: bold;
+            transition: all .5s ease-out;
+            letter-spacing: 2px;    
+            text-decoration: none; 
+            cursor: pointer;
+            text-align: center;
+            text-shadow: 0px 0px 30px #fff;
+            animation: blink linear 5s infinite;
+        }
+
+        .regbtn:hover{
+            background-color: #9802a8ff;
+            color: #fff;
+            border: 2px solid #9802a8ff;
+            box-shadow: 0px 0px 30px 1px white;
+        }
+
+        h2{
+            font-family: 'Rowdies', sans-serif;
+            color: white    ;
+            text-align: center;
+            font-size: 7vmin;
+            margin: 2rem 0;
+        }
+        .poster{
+            width: 90%;
+            cursor: pointer;    
+            /* border: 2px solid lime; */
+            padding: 10px;
+        }
+        .bgimg{
+            min-width:100%;
+            min-height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+        }
+
+        .rulelist{
+            list-style: decimal;
+            text-decoration: none;
+            font-family: 'DMSerifDisplay',sans-serif;
+            margin: 1rem;
+        }
+        .items{
+            font-size: 3.5vmin;
+            margin: 1rem;
+            color: #fff;
+        }
+
+        .rules{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay="" muted="" loop="" class="bgimg" style="opacity: .9">
+        <source src="animebg.mp4" type="video/mp4">
+    </video>
+    <div class="cont">
+        <h2>Workshop on 3D Animation</h2>
+        <img src="workshop.png" class="poster">
+        <a href="https://forms.gle/XSgE6UhvqHp7XaLN8" class="regbtn" target="_blank">Register here!!</a>
+    <h2>Rules and Guidelines</h2>
+    <div class="rules">
+        <ul class="rulelist">
+            <li class="items">The game will begin with a classic match for all teams, from which the top 4 teams will advance.</li>
+            <li class="items">Following this, a TDM match will be held among these 4 teams, with the winners from each team progressing.</li>
+            <li class="items">Subsequently, the last 2 teams will face off in a final TDM match to determine the ultimate victor.</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
