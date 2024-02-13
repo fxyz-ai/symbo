@@ -304,3 +304,22 @@ span{
 .colon{
     font-size: 8vmin;
 }
+
+.rulelist{
+    list-style: square;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    margin: 1rem;
+    text-align: left;
+    color: white;
+}
+
+.rules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    font-size: 3.7vmin;
+    width: 80%;
+    font-family: 'Poppins',sans-serif;
+}

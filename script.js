@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
+    console.log('Created by mf');
     abcs="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let inter = null;
     document.getElementById("head").onmouseover=e=>{

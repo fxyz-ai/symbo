@@ -25,16 +25,17 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: -1;
-    mix-blend-mode: overlay;
 }
 h2{
     font-family: 'Russo One', sans-serif;
     text-align: center;
+    text-decoration: underline;
     font-size: 6vmin;
+
 }
 .head{
     font-family: 'Rowdies', monospace;
-    font-size: 7vmin;
+    font-size: 10vmin;
     text-align: center;
     margin: 2rem 0;
     letter-spacing: 3px;
@@ -78,9 +79,10 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
+
 
 @media screen and (max-width: 700px) {
     .cont{
