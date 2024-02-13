@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&family=Lato&family=Protest+Guerrilla&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&family=Lato&family=Ubuntu&family=Protest+Guerrilla&family=Poppins&display=swap');
 @font-face {
     font-family: Matrix;
     src: url(Matrix-MZ4P.ttf);
@@ -47,11 +47,22 @@ h2{
 }
 h3{
     color: lime;
-    font-size: 5.5vmin;
+    font-size: 6vmin;
     font-family: 'Roboto',sans-serif;
     padding: 0 2rem;
     letter-spacing: 3px;
     text-shadow: 0px 0px 30px lime;
+}
+
+h4{
+    color: #fff;
+    font-size: 5.5vmin;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 1rem;
+    width: 100%;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 30px #fff;
+    text-align: center;
 }
 p{
     color: #fff;
@@ -181,6 +192,12 @@ span{
     .notec{
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+    .coords{
+        flex-direction: column;
+    }
+    .items{
+        text-align: justify;
     }
 }
 
@@ -321,5 +338,15 @@ span{
     margin: 1rem auto;
     font-size: 3.7vmin;
     width: 80%;
+    font-family: 'Poppins',sans-serif;
+}
+
+.coords{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3vmin auto;
+    font-size: 3.7vmin;
+    width: 100%;
     font-family: 'Poppins',sans-serif;
 }
