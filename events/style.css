@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Proza+Libre:ital@1&family=Russo+One&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Proza+Libre:ital@1&family=Russo+One&family=Mukta&family=Rowdies&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@ p{
 }
 
 .rulelist{
-    list-style: decimal;
+    list-style: none;
     text-decoration: none;
     font-family: 'DMSerifDisplay',sans-serif;
     margin: 1rem;
@@ -79,7 +79,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    flex-direction: column;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -89,6 +90,27 @@ p{
         flex-direction: column;
     }
     p{
-        width: 80%;
+        width: 90%;
     }
+
+    .coords{
+        flex-direction: column;
+    }
+}
+
+.coords{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3vmin auto;
+    font-size: 3.7vmin;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+}
+
+.coords > .items{
+    margin: 1rem 0;
+    font-size: 5vmin;
+    font-family: 'Mukta',monospace;
+    font-weight: bold;
 }
