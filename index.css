@@ -351,6 +351,16 @@ span{
     font-family: 'Poppins',sans-serif;
 }
 
+.sponsor{
+    width: 100%;
+    margin: 0;
+    font-size: 2.7vmin;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 4vmin;
+    padding: 8vmin 0;
+}
+
 /* .footest{
     width: 100%;
     margin: 0;
