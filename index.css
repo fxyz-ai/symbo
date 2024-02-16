@@ -361,10 +361,10 @@ span{
     padding: 8vmin 0;
 }
 
-/* .footest{
+.footest{
     width: 100%;
     margin: 0;
     font-size: 2.7vmin;
     background-color: transparent;
     backdrop-filter: blur(5px);
-} */
+}
