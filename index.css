@@ -199,6 +199,9 @@ span{
     .items{
         text-align: justify;
     }
+    .footest{
+        font-size: 3.4vmin;
+    }
 }
 
 .regbtn{
